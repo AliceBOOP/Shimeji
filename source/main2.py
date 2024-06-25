@@ -89,7 +89,7 @@ def update(cycle, check, event_number, x):
             cycle, walk_negative, event_number, 1, 9
         )
         x -= -3
-    window.geometry("100x100+" + str(x) + "+1050")
+    window.geometry("518x518" + str(x) + "+1050")
     label.configure(image=frame)
     window.after(1, event, cycle, check, event_number, x)
 
@@ -124,14 +124,14 @@ sleep_to_idle = [
 ]  # sleep to idle gif
 walk_positive = [
     tk.PhotoImage(
-        file=os.path.join(impath, "video.gif"),
+        file=os.path.join(impath, "walking positive.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(8)
 ]  # walk to left gif
 walk_negative = [
     tk.PhotoImage(
-        file=os.path.join(impath, "video-_1_.gif"),
+        file=os.path.join(impath, "walking negative.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(8)
