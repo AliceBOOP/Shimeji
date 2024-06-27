@@ -3,6 +3,7 @@ import random
 import tkinter as tk
 from pathlib import Path
 
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 x = 1400
@@ -89,7 +90,7 @@ def update(cycle, check, event_number, x):
             cycle, walk_negative, event_number, 1, 9
         )
         x -= -3
-    window.geometry("560x560")
+    window.geometry("126x126+" + str(x) + "+1035")
     label.configure(image=frame)
     window.after(1, event, cycle, check, event_number, x)
 
@@ -111,27 +112,27 @@ idle_to_sleep = [
 ]  # idle to sleep gif
 sleep = [
     tk.PhotoImage(
-        file=os.path.join(impath, "walk neg.gif"), format="gif -index %i" % (i)
+        file=os.path.join(impath, "walking pos.gif"), format="gif -index %i" % (i)
     )
     for i in range(4)
 ]  # sleep gif
 sleep_to_idle = [
     tk.PhotoImage(
-        file=os.path.join(impath, "video (2).gif"),
+        file=os.path.join(impath, "walking pos.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(4)
 ]  # sleep to idle gif
 walk_positive = [
     tk.PhotoImage(
-        file=os.path.join(impath, "video (2).gif"),
+        file=os.path.join(impath, "walking pos.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(4)
 ]  # walk to left gif
 walk_negative = [
     tk.PhotoImage(
-        file=os.path.join(impath, "video (2).gif"),
+        file=os.path.join(impath, "walk neg.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(4)
