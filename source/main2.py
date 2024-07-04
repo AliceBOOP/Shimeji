@@ -99,26 +99,26 @@ window = tk.Tk()
 # call buddy's action gif
 idle = [
     tk.PhotoImage(
-        file=os.path.join(impath, "walk neg.gif"), format="gif -index %i" % (i)
+        file=os.path.join(impath, "blink.gif"), format="gif -index %i" % (i)
     )
     for i in range(4)
 ]  # idle gif
 idle_to_sleep = [
     tk.PhotoImage(
-        file=os.path.join(impath, "walk neg.gif"),
+        file=os.path.join(impath, "blink.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(4)
 ]  # idle to sleep gif
 sleep = [
     tk.PhotoImage(
-        file=os.path.join(impath, "walking pos.gif"), format="gif -index %i" % (i)
+        file=os.path.join(impath, "blink neg.gif"), format="gif -index %i" % (i)
     )
     for i in range(4)
 ]  # sleep gif
 sleep_to_idle = [
     tk.PhotoImage(
-        file=os.path.join(impath, "walking pos.gif"),
+        file=os.path.join(impath, "blink neg.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(4)
