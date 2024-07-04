@@ -21,27 +21,27 @@ def event(cycle, check, event_number, x):
     if event_number in idle_num:
         check = 0
         print("idle")
-        window.after(400, update, cycle, check, event_number, x)
+        window.after(300, update, cycle, check, event_number, x)
     elif event_number == 5:
         check = 1
         print("from idle to sleep")
-        window.after(100, update, cycle, check, event_number, x)
+        window.after(300, update, cycle, check, event_number, x)
     elif event_number in walk_left:
         check = 4
         print("walking towards left")
-        window.after(100, update, cycle, check, event_number, x)
+        window.after(150, update, cycle, check, event_number, x)
     elif event_number in walk_right:
         check = 5
         print("walking towards right")
-        window.after(100, update, cycle, check, event_number, x)
+        window.after(150, update, cycle, check, event_number, x)
     elif event_number in sleep_num:
         check = 2
         print("sleep")
-        window.after(1000, update, cycle, check, event_number, x)
+        window.after(300, update, cycle, check, event_number, x)
     elif event_number == 14:
         check = 3
         print("from sleep to idle")
-        window.after(100, update, cycle, check, event_number, x)
+        window.after(300, update, cycle, check, event_number, x)
 
 
 # making gif work
