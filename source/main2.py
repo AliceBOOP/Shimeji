@@ -14,8 +14,8 @@ sleep_num = [10, 11, 12, 13, 15]
 walk_left = [6, 7]
 walk_right = [8, 9]
 event_number = random.randrange(1, 3, 1)
-impath = img_path = BASE_DIR / "static"
-
+#impath = img_path = BASE_DIR / "static"
+impath = img_path = u'C:\\Users\\Компьютер 10\\PycharmProjects\\pythonProject1\\Git\\Shimeji\\static'
 # transfer random no. to event
 def event(cycle, check, event_number, x):
     if event_number in idle_num:
