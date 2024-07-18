@@ -105,20 +105,20 @@ idle = [
 ]  # idle gif
 idle_to_sleep = [
     tk.PhotoImage(
-        file=os.path.join(impath, "blink.gif"),
+        file=os.path.join(impath, "idle_to_sleep.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(4)
 ]  # idle to sleep gif
 sleep = [
     tk.PhotoImage(
-        file=os.path.join(impath, "blink neg.gif"), format="gif -index %i" % (i)
+        file=os.path.join(impath, "sleep.gif"), format="gif -index %i" % (i)
     )
-    for i in range(4)
+    for i in range(5)
 ]  # sleep gif
 sleep_to_idle = [
     tk.PhotoImage(
-        file=os.path.join(impath, "blink neg.gif"),
+        file=os.path.join(impath, "sleep_to_idle.gif"),
         format="gif -index %i" % (i),
     )
     for i in range(4)
